@@ -2,7 +2,7 @@
 rm(list = ls())
 
 ## Set appropriate working directory
-# setwd("/home/vedrana/Documents/R/UCI HAR Programming Assignment")
+# setwd("/home/user/Documents/R/UCI HAR Programming Assignment")
 
 ## 1 - Merge the training and the test sets to create one data set.
 
