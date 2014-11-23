@@ -2,7 +2,7 @@
 rm(list = ls())
 
 ## Set appropriate working directory
-# setwd("/home/user/Documents/R/UCI HAR Programming Assignment")
+# setwd("/home/vedrana/Documents/R/UCI HAR Programming Assignment")
 
 ## 1 - Merge the training and the test sets to create one data set.
 
@@ -95,3 +95,7 @@ write(x=t(subset_feat_for_txt), file="OutputVariables.txt", ncolumns = 1, append
 ## Read data
 data_tidy <- read.table(file = "./OutputData.txt", header = TRUE)
 data_tidy$variable<-factor(data_tidy$variable)
+
+## Required format for the submission 
+file.remove("OutputData.txt")
+write.table(data_tidy,"OutputData.txt", row.name=FALSE)
